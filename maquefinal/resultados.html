@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--Datatable plugin CSS file -->
+    <link
+      rel="stylesheet"
+      href="styleresultados.css"
+    />
+
+    <!--jQuery library file -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+
+    <!--Datatable plugin JS library file -->
+    <script
+      type="text/javascript"
+      src="fillter.js"
+    ></script>
+    <style>
+      .footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: #2c3e50;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="inicio-sesion.html">System Votación V0.1</a>
+        </div>
+      </nav>
+    <div class="container">
+      <div class="row">
+        <table id="" class="display" style="width: 100%">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre Candidato</th>
+              <th>Partido</th>
+              <th>Cantidad de votos</th>              
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Candidato uno</td>
+              <td>Partido uno</td>
+              <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Candidato dos</td>
+                <td>Partido uno</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Candidato tres</td>
+                <td>Partido dos</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Candidato cuatro</td>
+                <td>Partido dos</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Candidato cinco</td>
+                <td>Partido dos</td>
+                <td>100</td>
+              </tr>
+            <tr>
+              <td>6</td>
+              <td>William</td>
+              <td>37</td>
+              <td>372</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Chandan</td>
+              <td>31</td>              
+              <td>375</td>
+            </tr>
+            <tr>
+              <td>S8</td>
+              <td>David</td>
+              <td>45</td>
+              <td>327</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script> 
+        /* Initialization of datatables */ 
+        $(document).ready(function () { 
+            $('table.display').DataTable(); 
+        }); 
+    </script> 
+    <footer class="footer text-center">
+      <div class="container">
+          <div class="row">
+              <!-- Footer Location-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Acerca de nosotros</h4>
+                  <p class="lead mb-0">
+                    Bienvenido a System Votacion, tu fuente confiable de información electoral,
+                    en el corazón de nuestra misión está el compromiso de empoderar a la comunidad con 
+                    conocimiento para tomar decisiones informadas durante el proceso electoral.
+                  </p>
+              </div>
+              <!-- Footer Social Icons-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Nuestra redes sociales</h4>
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://web.facebook.com/GobCauca/?_rdc=1&_rdr"><i class="fab fa-fw fa-facebook-f"></i></a> 
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/GobCauca"><i class="fab fa-twitter"></i></a>   
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/GobCauca/"><i class="fab fa-instagram"></i></a>    
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCJUgHfrUdzJojR2Ktao7fHw"><i class="fab fa-youtube"></i></a>                                                        
+              </div>
+              <!-- Footer About Text-->
+              <div class="col-lg-4">
+                  <h4 class="text-uppercase mb-4">Nuestra misión</h4>
+                  <p class="lead mb-0">
+                    En un mundo donde cada voto cuenta, creemos en la importancia de proporcionar acceso fácil 
+                    a información imparcial y relevante sobre candidatos, propuestas y el proceso electoral 
+                    en general. Estamos dedicados a fortalecer la democracia al fomentar la participación 
+                    ciudadana y la transparencia.
+                  
+                     
+                  </p>
+              </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
